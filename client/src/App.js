@@ -57,9 +57,15 @@ class App extends Component {
         <div className="App">
           <h1>CRWN Trade</h1>
           <p>Balance: {this.state.balance} CRWN</p>
-          <input type="number" onChange={(e) => this.setState({sendAmount: e.target.value})} />
-          <input onChange={(e) => this.setState({sendAddress: e.target.value})} />
-          <button onClick={this.sendTransaction}>send</button>
+          <div className="Input">
+            <label for="sendAmount">Send Amount: </label>
+            <input id="sendAmount" name="sendAmount" type="number" onChange={(e) => this.setState({sendAmount: e.target.value})} />
+          </div>
+          <div className="Input">
+            <label for="sendAddress">Send Address:</label>
+            <input id="sendAddress" name="sendAddress" onChange={(e) => this.setState({sendAddress: e.target.value})} />
+          </div>
+          <button className="Button" onClick={this.sendTransaction}>Send CRWN</button>
         </div>
       </div>
     );
