@@ -1,0 +1,19 @@
+.Container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 45px;
+  box-shadow: 0px 0px 6px 6px #e6e6e6; 
+}
+
